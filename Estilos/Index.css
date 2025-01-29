@@ -20,7 +20,7 @@ body{
 }
 
 .container{
-    padding: 0rem 12rtem 0 12rem;
+    padding: 0rem 12rem 0 12rem;
 }
 
 @media screen and (max-width: 992px){
@@ -30,4 +30,31 @@ body{
 
 
 
+}
+/*HEADER*/
+.navbar{
+    padding: 0 12rem;
+    background-color: var(--background-color);
+    position: relative;
+}
+
+.logo img{
+    width: 120px;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.header__info ul li{
+    padding: 2.5rem 1.2rem 1rem 1.2rem;
+    cursor: pointer;
+}
+
+.hireMe__button a{
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    font-family: var(--font);
+    font-size: small;
+    padding: 1rem 1.5rem;
+    border-color: unset;
+    border-width: 0;
 }

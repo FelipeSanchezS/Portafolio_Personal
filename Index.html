@@ -4,11 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Estilos/Index.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
     <title>Bienvenidos</title>
 </head>
 <body>
 <!--  HEADER   -->
-
+<header class="flex w-full fixed top-0 z-1">
+    <nav class="flex justify-content-between w-full navbar">
+        <span class="logo cursor-pointer">
+            <img src="./assets/Logo.png" alt="Logo de portafolio">
+        </span>
+        <input type="checkbox" aria-label="checkbox para mostrar y quitar menu" class="checkbox xl:hidden">
+        <div class="hamburger__lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <div class="header__info flex align-items-center gap-3">
+            <ul class="flex flex-column xl:flex-row list-none">
+                <li>Sobre mi</li>
+                <li>Servicios</li>
+                <li>Portafolio</li>
+                <li>Contacto</li>
+            </ul>
+           <div class="hiredMe__button pt-4">
+            <a href="mailTo:sanchez2001felipe@gmail.com" aria-label="check para conetactarme" class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contratame</a>
+           </div> 
+        </div>
+    </nav>
+</header>
 
 
 <!--  HOME PAGE   -->
@@ -40,5 +65,7 @@
 <section class="contact"></section>    
 
 
+
+<script src="https://kit.fontawesome.com/1392083920.js" crossorigin="anonymous"></script>
 </body>
 </html>
