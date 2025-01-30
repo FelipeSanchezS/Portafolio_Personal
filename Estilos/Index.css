@@ -1,3 +1,111 @@
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
 *{
     margin:0;
     padding:0;
@@ -32,6 +140,7 @@ body{
 
 }
 /*HEADER*/
+
 .navbar{
     padding: 0 12rem;
     background-color: var(--background-color);
@@ -71,11 +180,11 @@ body{
 }
 
 
-@media screen and (max-width: 1200px){
-    .navbar{
+@media screen and (max-width: 1200px) {
+    .navbar {
         padding: 0 2rem;
     }
-    .navbar .checkbox{
+    .navbar .checkbox {
         position: absolute;
         display: block;
         height: 32px;
@@ -86,7 +195,8 @@ body{
         opacity: 0;
         cursor: pointer;
     }
-    .navbar .hamburguer__lines {
+
+    .navbar .hamburger__lines {
         display: block;
         height: 26px;
         width: 32px;
@@ -99,37 +209,40 @@ body{
         justify-content: space-between;
     }
 
-    .navbar .hamburguer__lines .line{
+    .navbar .hamburger__lines .line {
         display: block;
         height: 4px;
         width: 100%;
         border-radius: 10px;
         background: #ffffff;
     }
-    .navbar .hamburger__lines .line1{
+    .navbar .hamburger__lines .line1 {
         transform-origin: 0% 0%;
         transition: transform 0.4s ease-in-out;
     }
-    .navbar .hamburger__lines .line2{
+    .navbar .hamburger__lines .line2 {
         transition: transform 0.2s ease-in-out;
     }
-    .navbar .hamburger__lines .line3{
+    .navbar .hamburger__lines .line3 {
         transform-origin: 0% 100%;
         transition: transform 0.4s ease-in-out;
     }
-    .header__info ul li{
+
+    .header__info ul li {
         padding: 0;
         margin: 2rem 0;
         cursor: pointer;
         font-size: x-large;
     }
-    .header__info ul li:hover{
+
+    .header__info ul li:hover {
         background-color: unset;
     }
-    .header__info{
+
+    .header__info {
         padding-top: 120px;
         height: 100vh;
-        background: var(--secondary-color);
+        background: var(--secondary-bg-color);
         width: 100%;
         position: absolute;
         top: 0;
@@ -140,8 +253,10 @@ body{
         flex-direction: column;
         transition: transform 0.5s ease-in-out;
     }
+
     .navbar input[type="checkbox"]:checked ~ .header__info {
         transform: translateX(0);
+        background-color: var(--secondary-color);
     }
 
     .navbar input[type="checkbox"]:checked ~ .hamburger__lines .line1 {
@@ -155,7 +270,78 @@ body{
     .navbar input[type="checkbox"]:checked ~ .hamburger__lines .line3 {
         transform: rotate(-45deg);
     } 
-
 }
 
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .navbar{
+        padding: 0 12rem;
+    }
+    .navbar .checkbox, .navbar .hamburger__lines {
+        right: 12rem;
+    }
+}
+
+/*HOME PAGE*/
+
+.right__content img{
+    height: 100%;
+    width: 100%;
+}
+.home__page{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.message__bubble{
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    height: auto;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+}
+.triangle:after{
+    content:"";
+    position: absolute;
+    left: 40%;
+    border: 15px solid;
+    border-color: var(--secondary-color) transparent transparent transparent;
+}
+.message__text{
+    padding: 1rem;
+}
+.home__buttons button{
+    padding: 1rem 2rem;
+    color: var(--font-color);
+}
+.home__buttons a{
+    background-color: var(--secondary-color);
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 1rem 1.5rem;
+}
+.home__buttons button{
+    background-color: transparent;
+    border: 1px solid #ffff;
+    border-width: thin;
+    font-family: var(--font);
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 1rem 1.5rem;
+}
+@media screen and (max-width: 576px) {
+    .message__bubble{
+        width: 160px;
+    }
+    .home__buttons a{
+        padding: 1rem 1rem !important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .home__page{
+        padding-top: 10rem;
+    }
+
+}
 /*ACERCA DE MI*/
+
