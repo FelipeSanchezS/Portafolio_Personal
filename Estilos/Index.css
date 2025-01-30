@@ -151,6 +151,7 @@ body{
     width: 120px;
     height: auto;
     margin-top: 1rem;
+    
 }
 
 .header__info ul li{
@@ -177,6 +178,9 @@ body{
 .header__info ul li:hover {
     background-color: var(--secondary-color);
     border-radius: 20px;
+}
+.menu-p{
+    height: 60px;
 }
 
 
@@ -286,6 +290,7 @@ body{
 .right__content img{
     height: 100%;
     width: 100%;
+    margin-top: 40px;
 }
 .home__page{
     height: 100vh;
