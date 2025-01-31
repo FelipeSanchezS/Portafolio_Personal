@@ -385,3 +385,43 @@ body{
     background-color: #ff4900;
     width: 80%;
 }
+
+/*FREE LANCER*/
+
+.freelancer{
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/assets/freelancer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*SERVICIOS*/
+
+.services{
+    padding-top: 81px;
+}
+.card{
+    background-color: #111111;
+    transition: all 0.2s ease-in;
+}
+.service__logo{
+    height: 60px;
+    width: 60px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+.service__logo i{
+    font-size: x-large;
+    transition: all 0.2s ease-in;
+}
+.card:hover{
+    background-color: var(--secondary-color);
+}
+.card:hover .service__logo{
+    background-color: #ffffff;
+}
+.card:hover .service__logo i{
+    color: #000;
+}
