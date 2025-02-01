@@ -491,3 +491,18 @@ body{
 .project__card:hover .overlay{
     opacity: 1;
 }
+
+.project__card.hide{
+    display: none;
+}
+.project__card.show{
+    animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
