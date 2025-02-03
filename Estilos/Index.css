@@ -506,3 +506,33 @@ body{
         opacity: 1;
     }
 }
+
+/*FOOTER*/
+
+footer{
+    border-top: 2px solid #ffffff;
+}
+
+:is(.social__media, .contact, .my__services) h3{
+    margin-bottom: 1rem;
+}
+:is(.social__media, .contact, .my__services) p,
+:is(.fa-phone, .fa-envelope, .fa-message, .fa-brands){
+    color: #a3a3a3;
+}
+.social__mediaIcons .fa-brands{
+    font-size: 2rem;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+.social__mediaIcons .fa-brands:hover{
+    color: var(--secondary-color);
+}
+.contact a{
+    padding: 0.5rem 1.8rem;
+    background-color: unset;
+    border: 1px solid var(--secondary-color);
+    font-family: var(--font);
+    font-size: 0.9rem;
+    color: #a3a3a3;
+}
