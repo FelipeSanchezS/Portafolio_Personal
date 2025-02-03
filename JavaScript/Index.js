@@ -18,3 +18,7 @@ filterContainer.addEventListener("click", (event) => {
         })
     }
 })
+
+function scrollToSection(sectionId){
+    document.getElementById(sectionId).scr
+}
