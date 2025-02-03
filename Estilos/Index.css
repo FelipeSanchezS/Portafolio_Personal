@@ -445,6 +445,7 @@ body{
 
 /*PORTAFOLIO*/
 
+
 .gallery__categories ul li{
     font-size: small;
     cursor: pointer;
@@ -528,10 +529,12 @@ body{
 
 footer{
     border-top: 2px solid #ffffff;
+    background-color: #BAFF39;
 }
 
 :is(.social__media, .contact, .my__services) h3{
     margin-bottom: 1rem;
+    color: #000000;
 }
 :is(.social__media, .contact, .my__services) p,
 :is(.fa-phone, .fa-envelope, .fa-message, .fa-brands){
@@ -551,5 +554,5 @@ footer{
     border: 1px solid var(--secondary-color);
     font-family: var(--font);
     font-size: 0.9rem;
-    color: #a3a3a3;
+    color: #000000;
 }
