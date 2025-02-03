@@ -283,9 +283,14 @@ body{
 /*HOME PAGE*/
 
 .right__content img{
-    height: 100%;
-    width: 100%;
-    margin-top: 40px;
+    height: 90%;
+    width: 90%;
+    margin-top: 90px;
+    border-radius: 40%;
+    left: 50px;
+}
+.left__content{
+    color: #000000;
 }
 .home__page{
     height: 100vh;
@@ -317,16 +322,16 @@ body{
 .home__buttons a{
     background-color: var(--secondary-color);
     font-size: 0.9rem;
-    color: #fff;
+    color: #000000;
     padding: 1rem 1.5rem;
 }
 .home__buttons button{
     background-color: transparent;
-    border: 1px solid #ffff;
+    border: 1px solid #000000;
     border-width: thin;
     font-family: var(--font);
     font-size: 0.9rem;
-    color: #fff;
+    color: #000000;
     padding: 1rem 1.5rem;
 }
 @media screen and (max-width: 576px) {
@@ -340,6 +345,13 @@ body{
 @media screen and (max-width: 1200px) {
     .home__page{
         padding-top: 6rem;
+    }
+    .right__content img{
+        height: 90%;
+        width: 90%;
+        margin-top: 9px;
+        border-radius: 40%;
+        left: 50px;
     }
 
 }
