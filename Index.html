@@ -26,6 +26,7 @@
         </div>
         <div class="menu-p header__info flex align-items-center gap-3">
             <ul class="flex flex-column xl:flex-row list-none">
+                
                 <li onclick="scrollToSection('about')">Sobre mi</li>
                 <li onclick="scrollToSection('services')">Servicios</li>
                 <li onclick="scrollToSection('portafolio')">Portafolio</li>
@@ -52,7 +53,10 @@
             <p class="text-gray-500">Ingeniero de sistemas, desarrolldor y analista de datos</p>
             <div class="home__buttons flex align-items-center gap-2 mt-6">
                 <a href="/assets/CV-Felipe-Sanchez.pdf" aria-label="Descargar curriculum" class="cursor-pointer border-round-lg no-underline" download>Descarga mi CV</a>
-                <button aria-label="Desliza para conocer mis proyectos" class="cursor-pointer border-round-lg">Mis trabajos</button>
+                <button aria-label="Desliza para conocer mis proyectos" onclick="location.href='#portafolio'" class="cursor-pointer border-round-lg"> Mis trabajos</button>
+                <a href="https://www.linkedin.com/in/felipe-sanchez-/" class="no-underline linkedin" target="_blank" aria-label="Ir a perfil de Linkedin">
+                    <i class="fa-brands fa-linkedin"></i> Linkedin
+                </a>
             </div>
         </div>
         <div class="right__content col-9 sm:col-6 xl:col-5">
@@ -88,7 +92,7 @@
                 </div>
                 <br>
                 <div class="hiredMe__button pt-4">
-                    <a href="mailTo:sanchez2001felipe@gmail.com" aria-label="check para conetactarme" class="cursor-pointer no-underline border-round-lg">Contratame</a>
+                    <a href="https://github.com/FelipeSanchezS" target="_blank" aria-label="check para conetactarme" class="cursor-pointer no-underline border-round-lg">Conoce mi repositorio en GitHub</a>
                 </div>
             </div>
             <div class="image col p-0 mt-6 md:mt-0">
@@ -268,13 +272,13 @@
             <p>Innovador</p>
             <p>Gran capacidad de analisis</p>
             <div class="social__mediaIcons mt-5 flex lg:justify-content-center gap-3">
-                <a href="" target="_blank" aria-label="Ir a Facebook">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="" target="_blank" aria-label="Ir a perfil de Linkedin">
+                <!-- <a href="mailTo:sanchez2001felipe@gmail.com" target="_blank" aria-label="Ir a Envia mensaje">
+                    <i class="fa-solid fa-message"></i>
+                </a> -->
+                <a href="https://www.linkedin.com/in/felipe-sanchez-/" target="_blank" aria-label="Ir a perfil de Linkedin">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="" target="_blank" aria-label="Ir a repositorio GitHub">
+                <a href="https://github.com/FelipeSanchezS" target="_blank" aria-label="Ir a repositorio GitHub">
                     <i class="fa-brands fa-github"></i>
                 </a>
             </div>
