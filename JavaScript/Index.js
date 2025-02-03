@@ -20,5 +20,5 @@ filterContainer.addEventListener("click", (event) => {
 })
 
 function scrollToSection(sectionId){
-    document.getElementById(sectionId).scr
+    document.getElementById(sectionId).scrollIntoView({behavior:"smooth"})
 }
