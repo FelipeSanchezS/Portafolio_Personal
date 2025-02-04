@@ -541,16 +541,19 @@ body{
 
 /*FORMULARIO*/
 
-form{
+.formulario{
     padding: 50px 55px;
     box-shadow: 0 0 20px rgba(136, 255, 0, 0.541);   
     border-radius: 20px;
     text-align: center;
     width: 640px;
+    /* Centrar el formulario en la pantalla */
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
     justify-content: center;
-    margin-left: 220px;
+    margin: 0 auto; 
+
 }
 .input-group{
     display: flex;
@@ -574,7 +577,7 @@ input, textarea{
     border: 2px solid #b1b1b1;
     color: var(--background-color);
     outline: none;
-}
+} 
 
 input::placeholder, textarea::placeholder{
     color: #000000;
