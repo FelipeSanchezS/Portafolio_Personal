@@ -398,7 +398,7 @@ body{
 }
 .progress_python span{
     background-color: #BAFF39;
-    width: 85%;
+    width: 75%;
 }
 .progress_html span{
     background-color: #BAFF39;
@@ -406,11 +406,15 @@ body{
 }
 .progress_css span{
     background-color: #BAFF39;
-    width: 72%;
+    width: 65%;
 }
 .progress_mysql span{
     background-color: #BAFF39;
     width: 80%;
+}
+.progress_it span{
+    background-color: #BAFF39;
+    width: 90%;
 }
 
 /*FREE LANCER*/
