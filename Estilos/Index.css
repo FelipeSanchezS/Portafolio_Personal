@@ -446,6 +446,7 @@ body{
 }
 .card:hover{
     background-color: var(--secondary-color);
+    color: #000000;
 }
 .card:hover .service__logo{
     background-color: #ffffff;
@@ -559,6 +560,67 @@ form{
 .t-form{
     margin-bottom: 15px;
 }
+label{
+    color: var(--secondary-color);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+input, textarea{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: var(--font-color);
+    border: 2px solid #b1b1b1;
+    color: var(--background-color);
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #000000;
+}
+.form{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.btn{
+    font-size: 16px;
+    color: #000000;
+    border: 0;
+    border-radius: 25px;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #000000;
+    transition: all .4s ease-in-out;
+    color: var(--secondary-color);
+}
+@media screen and (max-width: 1500px) {
+    form{
+        margin-left: 10px;
+        padding: 50px 50px;
+        width: 100%;
+    }
+    input{
+        padding: 15px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    form{
+        margin-left: 10px;
+        padding: 50px 50px;
+    }
+    input{
+        padding: 15px;
+    }
+
+}
+
 
 
 /*FOOTER*/
