@@ -179,6 +179,17 @@ body{
     border-radius: 20px;
 }
 
+.hiredMe__button a{
+    background-color: var(--secondary-color);
+    color: #000000;
+    font-family: var(--font);
+    font-size: small;
+    padding: 1rem 1.5rem;
+    border-color: unset;
+    border-width: 0;
+    margin-top: -80px;
+}
+
 @media screen and (max-width: 1200px) {
     .navbar {
         padding: 0 2rem;
