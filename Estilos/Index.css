@@ -538,6 +538,29 @@ body{
     }
 }
 
+/*FORMULARIO*/
+
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(136, 255, 0, 0.541);   
+    border-radius: 20px;
+    text-align: center;
+    width: 640px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-left: 220px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.t-form{
+    margin-bottom: 15px;
+}
+
+
 /*FOOTER*/
 
 footer{
