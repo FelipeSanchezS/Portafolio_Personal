@@ -548,7 +548,7 @@ footer{
     cursor: pointer;
 }
 .social__mediaIcons .fa-brands:hover{
-    color: var(--secondary-color);
+    color: #ffffff;
 }
 .contact a{
     padding: 0.5rem 1.8rem;
