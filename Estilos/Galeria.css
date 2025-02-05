@@ -78,13 +78,31 @@
     font-style: italic;
   }
 
+  *{
+    padding: 0;
+  }
+
   body{
     font-family: 'poppins';
   }
 
   /*GALERIA*/
-
-  .gallery__categories ul li{
+.portfolio{
+    padding-top: 2rem;
+    padding-bottom: 6px;
+    padding: 15px;
+}
+.portfolio__title{
+    margin-bottom: 1px;
+    flex-direction: column;
+    gap: 3;
+    text-align: center;
+}
+.portfolio__title h1{
+    margin-bottom: 2px;
+    font-size: 40px;
+}
+.gallery__categories ul li{
     font-size: small;
     cursor: pointer;
 }
@@ -96,6 +114,7 @@
     height: 350px;
     display: block;
     position: relative;
+    width: calc(25% - 20px); /* Esto asegura que haya 4 elementos por fila, ajustando el espacio */
 }
 
 .project__card img{
@@ -107,7 +126,7 @@
 }
 
 .project__card .overlay{
-    background: #6d6eddd7;
+    background: #baff39d7;
     backdrop-filter: blur(2.7px);
     -webkit-backdrop-filter: blur(2.7px);
     position: absolute;
@@ -137,6 +156,7 @@
 .project__card .project__info p{
     font-size: small;
     margin-top: 2rem;
+    padding: 20px;
 }
 .project__card .fa-arrow-right-long{
     margin-top: 1rem;
