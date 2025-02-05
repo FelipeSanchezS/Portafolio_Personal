@@ -82,6 +82,8 @@
     font-family: 'poppins';
   }
 
+  /*GALERIA*/
+
   .gallery__categories ul li{
     font-size: small;
     cursor: pointer;
@@ -101,10 +103,11 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 20px;
 }
 
 .project__card .overlay{
-    background: #baff39d7;
+    background: #6d6eddd7;
     backdrop-filter: blur(2.7px);
     -webkit-backdrop-filter: blur(2.7px);
     position: absolute;
@@ -119,6 +122,7 @@
     -moz-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     color: #000000;
+    border-radius: 20px;
 }
 .project__card .project__info{
     color: #000000;
