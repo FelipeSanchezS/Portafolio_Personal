@@ -27,6 +27,8 @@ prev.onclick = function(){
     reloadSlider();
 }
 
+let refreshSlider = setInterval(() => {next.click()}, 5000);
+
 function reloadSlider(){
     let checkLeft = items[active].offsetLeft;
     list.style.left = - checkLeft + 'px';
@@ -34,16 +36,21 @@ function reloadSlider(){
     let lastActiveDot = document.querySelector('.slider .dots li.active');
     lastActiveDot.classList.remove('active');
     dots[active].classList.add('active');
+    clearInterval(refreshSlider);
+    refreshSlider = setInterval(() => {next.click()}, 5000);
 }
+
+dots.forEach((li, key) => {
+    li.addEventListener('click', function(){
+        active = key;
+        reloadSlider();
+    })
+})
+
+
 
 //Scroll
 function scrollToSection(sectionId){
     document.getElementById(sectionId).scrollIntoView({behavior:"smooth"})
 }
 
-.dots.forEach(list, key)=>{
-    list.addEventListener('click', function(){
-        active = key;
-        reloadSlider();
-    })
-}
